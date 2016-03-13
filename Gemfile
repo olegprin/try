@@ -25,10 +25,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "pg"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-group :development do
-  gem 'capistrano-rails'
-  gem 'capistrano-rbenv', '~> 2.0', require: false
-end
+
+gem 'capistrano'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+
+# Add this if you're using rbenv
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
 
 # Use Unicorn as the app server
 # gem 'unicorn'
